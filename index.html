@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+    <style>
+        @keyframes appear{
+            from{
+                opacity: 0;
+                scale: 0.5;
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
+         div {
+            animation: appear 1s ease-in-out;
+            animation-timeline: view();
+            animation-range: entry 0%;
+        }
+    </style>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "giEYvftAz8TvEfamy",
+      });
+   })();
+</script>
+
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">M</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h1>Hi, I'm <span>Matthew</span></h1>
+            <p>An aspiring full stack developer. Learning to build for the web. Curious, consistent, and always open to learning.</p>
+        
+            
+            <div class="social-icons">
+                <a href="https://github.com/blvdchld">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/mmnnaviii/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://web.facebook.com/mmnnaviii/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://discord.gg/2mp3zxxqWk">
+                    <ion-icon name="logo-discord"></ion-icon>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download CV</a>
+                <a href="#contact" class="btn btn-light">Contact Me</a>
+            </div>
+
+        </div>
+
+       <a href="https://www.youtube.com/@seannevamiss">
+            <div class="home-img">
+                <img src="assets/img.jpg" alt="Matthew"/>
+            </div>
+       </a>
+    </section>
+
+    <section class="about" id="about">
+        
+        <a href="https://www.youtube.com/@seannevamiss">
+            <div class="about-img">
+                <img src="assets/img.jpg" alt="Matthew"/>
+            </div>
+       </a>
+
+        <div class="about-content" reveal>
+            <h2>About <span>Me</span></h2>
+            <p>I am a first-year Bachelor of Science in Information Technology (BSIT) student at Samar State University in Catbalogan City. I am passionate about technology, programming, and web development. As an aspiring Full-Stack Developer, I am eager to learn new skills, explore different technologies, and improve my coding abilities. My goal is to become a skilled developer who can create innovative, functional, and user-friendly applications.</p>
+        </div>
+    </section>
+
+    <section class="services" id="services" rev>
+        
+        <div class="service-content" reveal>
+            <h2 class="heading">Services</h2>
+        </div>        
+
+        <div class="services-container">
+            
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxs-devices"></i>
+                    <h4>Mobile App Development</h4>
+                </div>
+            </div>
+        
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code"></i>
+                    <h4>Frontend Development</h4>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code-curly"></i>
+                    <h4>Backend Development</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        
+        <div class="contact-content" reveal>
+            <h2 class="heading">Contact <span>Me</span></h2>
+        </div>
+
+        <div class="container">
+            <form id="contact-form">
+                <div class="input-group" reveal>
+                    <div class="input-box">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-box" reveal>
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                </div>
+
+                <div class="input-group-2" reveal>
+                    <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+            </form>
+        </div>
+    </section>
+
+   <footer class="footer">
+         <div class="social-icons" reveal>
+                <a href="https://github.com/blvdchld">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/mmnnaviii/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://web.facebook.com/mmnnaviii/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </div>
+
+            <div class="menu-content">
+                <!--<ul class="list">
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>-->
+    
+
+                <p class="copyright">
+                    ©  M | All Rights Reserved
+                </p>
+            </div>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
